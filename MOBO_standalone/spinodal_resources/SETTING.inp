@@ -1,0 +1,79 @@
+** ELEMENT CONTROLS
+** 
+*Section Controls, name=EC-1, DISTORTION CONTROL=YES, hourglass=ENHANCED
+1., 1., 1.
+*Amplitude, name=Amp-1
+             0.,              0.,           0.002,              1.
+** 
+** INTERACTION PROPERTIES
+** 
+*Surface Interaction, name=IntProp-1
+*Friction
+1.,
+*Surface Behavior, pressure-overclosure=HARD
+** ----------------------------------------------------------------
+** 
+** STEP: Step-1
+** 
+*Step, name=Step-1, nlgeom=YES
+*Dynamic, Explicit
+, 0.002,, 0.1
+*Bulk Viscosity
+0.06, 1.2
+** Mass Scaling: Semi-Automatic
+**               SPINODAL.SET-1
+*Fixed Mass Scaling, elset=SPINODAL.SET-1, factor=2
+** 
+** BOUNDARY CONDITIONS
+** 
+** Name: BC-1 Type: Symmetry/Antisymmetry/Encastre
+*Boundary
+Set-2, ENCASTRE
+** Name: BC-2 Type: Displacement/Rotation
+*Boundary
+Set-3, 1, 1
+Set-3, 2, 2
+Set-3, 4, 4
+Set-3, 5, 5
+Set-3, 6, 6
+** Name: BC-3 Type: Displacement/Rotation
+*Boundary, amplitude=Amp-1
+Set-4, 3, 3, -20.
+** 
+** INTERACTIONS
+**
+** Interaction: Self_General_Contact
+*Contact, op=NEW
+*Contact Inclusions
+ , 
+*Contact Property Assignment
+ ,  , IntProp-1
+** 
+** OUTPUT REQUESTS
+** 
+*Restart, write, number interval=1, time marks=NO
+** 
+** FIELD OUTPUT: F-Output-1
+** 
+*Output, field
+*Node Output
+A, RF, U, V
+*Element Output, directions=YES
+EVF, LE, PE, PEEQ, PEEQVAVG, PEVAVG, S, STATUS, SVAVG
+*Contact Output
+CSTRESS,
+** 
+** HISTORY OUTPUT: H-Output-1
+** 
+*Output, history, time interval=0.00001
+*Node Output, nset=SET-3
+U3
+** 
+** HISTORY OUTPUT: H-Output-3
+** 
+*Output, history, time interval=1e-05
+*Node Output, nset=SET-2
+RF3, 
+** 
+** 
+*End Step
