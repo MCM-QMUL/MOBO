@@ -29,13 +29,14 @@ First author: **Hirak Kansara**, Code contribution:Siamak Khosroshahi, Correspon
 ### **Prerequisites**
 - Python 3.8+  
 - [pip](https://pip.pypa.io/en/stable/installation/)  
-- FEA software (e.g., Abaqus, FEniCS) *[optional, for simulations]*  
+- FEA software (Abaqus)
+- Matlab
 
 ### **Steps**  
 1. **Clone the repository**:  
    ```bash  
-   git clone https://github.com/yourusername/spinodoid-optimization.git  
-   cd spinodoid-optimization  
+   git clone https://github.com/MCM-QMUL/MOBO.git
+   cd MOBO 
    ```  
 
 2. **Install dependencies**:  
@@ -61,7 +62,7 @@ First author: **Hirak Kansara**, Code contribution:Siamak Khosroshahi, Correspon
 ### **Basic Usage**  
 Run the optimization workflow with:  
 ```bash  
-python optimize.py --config config.yaml  
+python main.py --config config.yaml  
 ```  
 
 #### **Input Parameters** (edit `config.yaml`)  
