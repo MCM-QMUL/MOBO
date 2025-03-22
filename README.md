@@ -19,6 +19,15 @@ Figure 1: Visualisation of changes in two design parameters using graded spinodo
 
 Figure 2: A schematic of the multi-objective Bayesian optimisation (MOBO) process for optimising the spinodoid cellular structure design space involves four steps of the data-driven process. (1) Initial Dataset Creation: Sampling 50 points from the design space using the Sobol' sequence and evaluate them with FEM simulations to build the initial dataset. (2) Surrogate Model Update: Updating the Gaussian Process model based on the dataset to predict structural properties. (3) Identifying samples to evaluate: Using an acquisition function to identify and evaluate the most promising design points. (4) FEM Simulations: Performing FEM analysis on generated structures and extracting objectives to then update the dataset.
 
+
+![optimisation_History_and_Hypervolume](https://github.com/user-attachments/assets/fcac0a0f-6272-4403-8e59-8c4c61d35768)
+
+Figure 3: Optimisation history: peak force verus energy absorption. Insert figure: the hypervolume evoluation against iterations. 
+
+![Geometry_Changes_with_Pareto_Front_Sorted](https://github.com/user-attachments/assets/34c5bf71-10ed-4da3-aaf2-febcc4ea2524)
+
+Figure 4: Topologies changes with the changing pareto front. 
+
 MOBO is an open-source framework capable of carrying out Bayesian optimisation of spinodoid cellular materials.
 
 First author: **Hirak Kansara**, Code contribution:Siamak Khosroshahi, Corresponding authors: **Dr Wei Tan (wei.tan@qmul.ac.uk)**
