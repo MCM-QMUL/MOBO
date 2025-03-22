@@ -101,7 +101,7 @@ python optimize.py --config config.yaml
 - Parallel evaluation: Add `--workers 4` to use 4 CPU cores.  
 - Resume optimization:  
   ```bash  
-  python optimize.py --config config.yaml --resume_from results/checkpoint.pkl  
+  python main.py --config config.yaml --resume_from results/checkpoint.pkl  
   ```  
 
 ---
