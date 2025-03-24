@@ -30,7 +30,7 @@ Figure 4: Topologies changes with the changing pareto front.
 
 MOBO is an open-source framework capable of carrying out Bayesian optimisation of spinodoid cellular materials.
 
-First author: **Hirak Kansara**, Code contribution:Siamak Khosroshahi, Corresponding authors: **Dr Wei Tan (wei.tan@qmul.ac.uk)**
+First author: **Hirak Kansara**, Code contribution: Siamak Khosroshahi, Corresponding author: **Dr Wei Tan (wei.tan@qmul.ac.uk)**
 
 
 ## 🛠 Installation
