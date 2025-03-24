@@ -39,7 +39,7 @@ First author: **Hirak Kansara**, Code contribution: Siamak Khosroshahi, Correspo
 - Python 3.8+  
 - [pip](https://pip.pypa.io/en/stable/installation/)  
 - FEA software (Abaqus)
-- Matlab
+- MATLAB (Requires the GIBBON library https://github.com/gibbonCode/GIBBON.git and ImageProcessingToolBox)
 
 ### **Steps**  
 1. **Clone the repository**:  
@@ -95,7 +95,7 @@ python main.py
      Peak_Force
    ```  
 
-2. Start optimisation:  # change mode in main.py to change if running framework either locally or on cluster
+2. Start optimisation:  # change mode in main.py if running framework either locally or on cluster
    ```bash  
    python main.py  
    ```  
