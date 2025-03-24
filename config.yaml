@@ -3,7 +3,6 @@ defaults:
 
 path_to_spinodal_resources: 'C:\Temp\MOO\MOBO_standalone\spinodal_resources\'
 path_to_MOO_folder: 'C:\Temp\MOO\'
-path: 'C:\Temp\MOO\MOBO_standalone'
 path_to_GIBBON: 'C:\Users\hirak\Desktop\Gibbon'
 initial_data_filename: 'selected_data_combined' # doesn't need .csv extension
 apply_transform: True
@@ -12,14 +11,10 @@ input_columns:
   - 'Theta_1'
   - 'Theta_2'
   - 'Theta_3'
-  #- 'x1'
-  #- 'x2'
 output_columns:
   - 'EA'
   - 'Peak_Force'
   - 'EA_Mode'
-  #- 'y1'
-  #- 'y2'
 batch_size: 1
 n_iterations: 200
 kernel: 
