@@ -69,58 +69,46 @@ First author: **Hirak Kansara**, Code contribution:Siamak Khosroshahi, Correspon
 ## 🚀 Running Jobs
 
 ### **Basic Usage**  
-Run the optimization workflow with:  
+Run the optimisation workflow with:  
 ```bash  
-python main.py --config config.yaml  
+python main.py
 ```  
 
 #### **Input Parameters** (edit `config.yaml`)  
-- `material_model`: Elastoplastic parameters (e.g., yield stress).  
-- `design_bounds`: Min/max values for spinodoid topology variables.  
-- `objectives`: Set weights for `energy_absorption` and `peak_force`.  
-
-### **Outputs**  
-- **Pareto-optimal designs**: Saved to `results/pareto_front.csv`.  
-- **Simulation logs**: Stored in `logs/optimization.log`.  
-- **Visualizations**: Generate plots with:  
-  ```bash  
-  python scripts/plot_results.py --input results/pareto_front.csv  
-  ```  
+- `input_columns`: Design parameters.
+- `n_iterations`: Number of MOBO iterations used as stopping criteria
+- `kernel`: Type of kernel used for covariance calculation
+- `MOBO_type`: MOBO methods as described in the article
+- `apply_transform`: If True, scales the objectives for them to be maximised.
+  
+#### **Output Parameters** (edit `config.yaml`)  
+- `output_columns`: Parameters to output, maximised by default
+- **Pareto-optimal designs**: Saved to `hydra_output_dir/pareto_front.csv`.
+- **Optimisation History**: Saved to `hydra_output_dir/optimisation_history.csv`.  
+- **Simulation logs**: Stored in `hydra_output_dir/main.log`.  
 
 ### **Example Workflow**  
 1. Define objectives in `config.yaml`:  
    ```yaml  
    objectives:  
-     energy_absorption: maximize  
-     peak_force: minimize  
+     EA 
+     Peak_Force
    ```  
 
-2. Start optimization:  
+2. Start optimisation:  # change mode in main.py to change if running framework either locally or on cluster
    ```bash  
-   python optimize.py --config config.yaml  
+   python main.py  
    ```  
 
-3. Analyze results:  
-   - View Pareto front: `results/pareto_front.csv`.  
-   - Visualize top designs:  
-     ```bash  
-     python scripts/render_design.py --id 42  
-     ```  
-
-### **Advanced Options**  
-- Parallel evaluation: Add `--workers 4` to use 4 CPU cores.  
-- Resume optimization:  
-  ```bash  
-  python main.py --config config.yaml --resume_from results/checkpoint.pkl  
-  ```  
-
+3. Analyse results:  
+   - View Pareto front: `hydra_output_dir/pareto_front.csv`.  
 ---
 
 ## 💡 Notes  
 - **Hardware**: Simulations are computationally intensive. Use HPC/cluster for large-scale runs.  
 - **Troubleshooting**:  
-  - If FEA fails, check `logs/simulation_errors.log`.  
-  - Reduce mesh density in `config.yaml` for faster debugging.  
+  - If FEA fails, check `<job_name>.o<job_id>`.  
+  - Mesh density can be changed in /MOBO_standalone/spinodal_resources/Objective_Spinodoid_Tet.m by changing the res variable for faster debugging.
 
 ## Reference
 If using this code for research or industrial purposes, please cite:
