@@ -24,14 +24,14 @@ def MOBO_optimise(config, mode):
     input_columns = config.input_columns    
     output_columns = config.output_columns
     kernel = config.kernel
-    path_to_MOO = config.path_to_MOO_folder
+    path_to_MOBO = config.path_to_MOBO_folder
     batch_size = config.batch_size
     path_to_GIBBON = config.path_to_GIBBON
     initial_data_filename = config.initial_data_filename
     apply_transform = config.apply_transform
 
-    sys.path.insert(0, os.path.abspath(path_to_MOO+'/MOBO_standalone'))
-    sys.path.insert(0, os.path.abspath(path_to_MOO+'/src'))
+    sys.path.insert(0, os.path.abspath(path_to_MOBO+'/MOBO_standalone'))
+    sys.path.insert(0, os.path.abspath(path_to_MOBO+'/src'))
 
     from MOBO_methods import MOBO_methods
     from spinodoid_script import Spinodoid_function
@@ -46,7 +46,7 @@ def MOBO_optimise(config, mode):
 
     train_x, train_y = utility_functions.initial_data_to_csv(
         path_to_spinodal_resources=path_to_spinodal_resources, 
-        path_to_MOO=path_to_MOO,
+        path_to_MOBO=path_to_MOBO,
         hydra_output_directory=hydra_output_directory, 
         input_columns=input_columns, 
         output_columns=output_columns, 
