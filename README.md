@@ -113,7 +113,7 @@ python main.py
 ## Reference
 If using this code for research or industrial purposes, please cite:
 
-[1] Kansara, H., Khosroshahi, S.F., Guo, L., Bessa, M.A. and Tan, W., 2024. Multi-objective Bayesian Optimisation of Spinodoid Cellular Structures for Crush Energy Absorption. Computer Methods for Applied Mechanics and Engineering, 2025
+[1] Kansara, H., Khosroshahi, S.F., Guo, L., Bessa, M.A. and Tan, W., Multi-objective Bayesian Optimisation of Spinodoid Cellular Structures for Crush Energy Absorption. Computer Methods for Applied Mechanics and Engineering, 2025. https://doi.org/10.1016/j.cma.2025.117890
 
 ## License
 MIT
