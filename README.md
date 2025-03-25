@@ -75,6 +75,7 @@ python main.py
 ```  
 
 #### **Input Parameters** (edit `config.yaml`)  
+- Define path to MOBO folder, path to spinodal resources, and path to GIBBON folder (Similarly, add path to GIBBON folder in Objective_Spinodoid_Tet.m lines 6 & 7)
 - `input_columns`: Design parameters.
 - `n_iterations`: Number of MOBO iterations used as stopping criteria
 - `kernel`: Type of kernel used for covariance calculation
