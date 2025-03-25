@@ -1,9 +1,9 @@
 defaults:
   - override hydra/job_logging: custom
 
-path_to_spinodal_resources: 'C:\Temp\MOBO\MOBO_standalone\spinodal_resources\'
-path_to_MOBO_folder: 'C:\Temp\MOBO\'
-path_to_GIBBON: 'C:\Path\to\Gibbon'
+path_to_spinodal_resources: '\Path\to\MOBO\MOBO_standalone\spinodal_resources\'
+path_to_MOBO_folder: '\Path\to\MOBO\'
+path_to_GIBBON: '\Path\to\Gibbon'
 initial_data_filename: 'selected_data_combined' # doesn't need .csv extension
 apply_transform: True
 input_columns:
