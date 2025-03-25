@@ -1,10 +1,10 @@
 clear; close all; clc;
 
 disp('File read start')
-% load('temp_directory.mat')
-% addpath(fullfile(temp_directory)); 
-addpath(fullfile('C:/Users/hirak/Desktop/Gibbon/','lib')); 
-addpath(fullfile('C:\Users\hirak\Desktop\Gibbon\lib_ext','geogram'));
+load('temp_directory.mat')
+addpath(fullfile(temp_directory)); 
+addpath(fullfile('Path/to/Gibbon/','lib')); 
+addpath(fullfile('Path/to/Gibbon/lib_ext','geogram'));
 Count = 1; 
 Cube_Length = 40;
 
