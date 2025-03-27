@@ -1,7 +1,7 @@
 # MOBO
 **Open-source Code for Multi-objective Bayesian Optimisation of Spinodoid Cellular Materials**
 
-This repository introduces a multi-objective Bayesian optimisation (MOBO) framework for optimising spinodoid structures—scalable, non-periodic topologies with efficient stress distribution—to enhance crush energy absorption under impact. The framework addresses the challenge of balancing conflicting objectives: maximising energy absorption while minimizing peak forces, accounting for non-linear material behavior and plastic deformation. By integrating finite element analysis (FEA) with Bayesian optimisation, it efficiently navigates the design space, reducing computational costs compared to conventional methods (e.g., NSGA-II). Key features include:
+This repository introduces a multi-objective Bayesian optimisation (MOBO) framework for optimising spinodoid structures—scalable, non-periodic topologies with efficient stress distribution—to enhance crush energy absorption under impact. The framework addresses the challenge of balancing conflicting objectives: maximising energy absorption while minimising peak forces, accounting for non-linear material behavior and plastic deformation. By integrating finite element analysis (FEA) with Bayesian optimisation, it efficiently navigates the design space, reducing computational costs compared to conventional methods (e.g., NSGA-II). Key features include:
 
 - Pareto-optimal solutions via scalarisation and hypervolume techniques.
 
