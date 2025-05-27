@@ -54,7 +54,7 @@ First author: **Hirak Kansara**, Code contribution: Siamak Khosroshahi, Correspo
    ```  
    Key packages include:  
    - `numpy`, `scipy`: Numerical operations.  
-   - `gpflow`, `trieste`: Bayesian optimisation.  
+   - `botorch`, `gpytorch`: Bayesian optimisation.  
    - `pymoo`: Multi-objective optimisation utilities.  
 
 3. **(Optional) Set up FEA integration**:  
