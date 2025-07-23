@@ -64,7 +64,7 @@ class utility_functions:
 
         return train_x, train_y
  
-    def initial_data_to_csv(path_to_spinodal_resources, hydra_output_directory, input_columns, output_columns, path_to_MOO, initial_data_file_name, tkwargs, apply_transform):
+    def initial_data_to_csv(path_to_spinodal_resources, hydra_output_directory, input_columns, output_columns, path_to_MOBO, initial_data_file_name, tkwargs, apply_transform):
         '''
         Function reads data from initial csv file and creates a new csv file containing the selected inputs and outputs.
         
@@ -77,7 +77,7 @@ class utility_functions:
         '''
         os.chdir(path_to_spinodal_resources)
 
-        filename = os.path.join(path_to_MOO, initial_data_file_name + '.csv')
+        filename = os.path.join(path_to_MOBO, initial_data_file_name + '.csv')
 
         if initial_data_file_name == 'initial_doe_cleaned' or initial_data_file_name == 'initial_doe_cleaned_failure_type':
             df = pd.read_csv(filename, skiprows=[0])
