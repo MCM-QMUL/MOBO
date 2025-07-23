@@ -57,12 +57,9 @@ First author: **Hirak Kansara**, Code contribution: Siamak Khosroshahi, Correspo
    - `botorch`, `gpytorch`: Bayesian optimisation.  
    - `pymoo`: Multi-objective optimisation utilities.  
 
-3. **(Optional) Set up FEA integration**:  
-   - Configure paths to your FEA solver in `config.yaml`.  
-   - Test with:  
-     ```bash  
-     python tests/test_fea.py  
-     ```  
+3. **Change directories in**:  
+   - config.yaml
+   - MOBO_standalone\spinodal_resources\spinodoid_scripy.py to allow subprocess to call MATLAB.exe file
 
 ---
 
