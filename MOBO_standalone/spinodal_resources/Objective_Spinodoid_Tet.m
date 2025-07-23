@@ -1,7 +1,7 @@
 clear; close all; clc;
 
-disp('File read start')
-load('temp_directory.mat')
+%disp('File read start')
+%load('temp_directory.mat')
 addpath(fullfile(temp_directory)); 
 addpath(fullfile('Path/to/Gibbon/','lib')); 
 addpath(fullfile('Path/to/Gibbon/lib_ext','geogram'));
@@ -130,16 +130,16 @@ if isfile('acquisition.txt') == 1
     delete MAIN.stt
     delete F_Z.rpt
     delete Mass.txt
-    delete ASSEMBLY_writer_Hill_PETG.m
-    delete Force_Extractor.py
-    delete Force_reader.m
-    delete MAIN.inp
-    delete MASS_VOLUME_Extractor.py
-    delete PETG_plastic_compression.csv
-    delete Plate_01.inp
-    delete SETTING.inp
-    delete spinodoid_generator_Tet.m
-    delete temp_directory.mat
+    % delete ASSEMBLY_writer_Hill_PETG.m
+    % delete Force_Extractor.py
+    % delete Force_reader.m
+    % delete MAIN.inp
+    % delete MASS_VOLUME_Extractor.py
+    % delete PETG_plastic_compression.csv
+    % delete Plate_01.inp
+    % delete SETTING.inp
+    % delete spinodoid_generator_Tet.m
+    % delete temp_directory.mat
 
 else
     DataSet.Mass{Count}         = 0;
