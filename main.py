@@ -15,13 +15,13 @@
 import hydra
 import sys
 import os
-# sys.path.insert(0, os.path.abspath('C:\\Temp\\MOO'))
-sys.path.insert(0, os.path.abspath('C:\\Temp\MOO\\benchmark'))
-# from MOBO_optimise import MOBO_optimise
+sys.path.insert(0, os.path.abspath('C:\\Temp\\MOBO'))
+# sys.path.insert(0, os.path.abspath('C:\\Temp\MOBO\\benchmark'))
+from MOBO_optimise import MOBO_optimise
 
 #from ZDT1_benchmark import MOBO_optimise
 
-from BraninCurrin_benchmark import MOBO_optimise
+# from BraninCurrin_benchmark import MOBO_optimise
 @hydra.main(config_path=".", config_name="config")
 
 def main(config):
