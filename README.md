@@ -58,9 +58,9 @@ First author: **Hirak Kansara**, Code contribution: Siamak Khosroshahi, Correspo
    - `pymoo`: Multi-objective optimisation utilities.  
 
 3. **Change directories in**:  
-   - config.yaml
+   - config.yaml to define path to MOBO folder, path to spinodal resources, and path to GIBBON folder
    - MOBO_standalone\spinodal_resources\spinodoid_scripy.py to allow subprocess to call MATLAB.exe file
-
+   - Add path to GIBBON folder in Objective_Spinodoid_Tet.m lines 6 & 7
 ---
 
 ## 🚀 Running Jobs
@@ -72,7 +72,6 @@ python main.py
 ```  
 
 #### **Input Parameters** (edit `config.yaml`)  
-- Define path to MOBO folder, path to spinodal resources, and path to GIBBON folder (Similarly, add path to GIBBON folder in Objective_Spinodoid_Tet.m lines 6 & 7)
 - `input_columns`: Design parameters.
 - `n_iterations`: Number of MOBO iterations used as stopping criteria
 - `kernel`: Type of kernel used for covariance calculation
